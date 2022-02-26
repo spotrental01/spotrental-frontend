@@ -20,8 +20,8 @@
   <meta name="twitter:image" content="">
 
   <!-- Favicons -->
-  <link rel="icon" href="assets/images/spot.svg" sizes="16x16" type="image/svg">
-  <link href="assets/img/favicon.png" rel="icon">
+  <link rel="icon" href="assets/image" sizes="16x16" type="image/svg">
+  <link href="assets/img/favicon-32x32.png" rel="icon" type="image/png">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -31,6 +31,11 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -52,7 +57,7 @@
           <h4>Life is a journey make the most of it. </h4>
           <h2>A step towards <span class="typed" data-typed-items="Modern India"></span></h2>
           <div class="actions">
-            <a href="#about" class="btn-get-started">Get Strated</a>
+            <a href="#about" class="btn-get-started">Download</a>
             <a href="#services" class="btn-services">Our Services</a>
           </div>
         </div>
@@ -166,7 +171,7 @@
           <div class="col-md-12">
             <h3 class="section-title">Our Services</h3>
             <div class="section-title-divider"></div>
-            <p class="section-description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <p class="section-description">Spotrental is a marketplace which enables one's to get various  types of vehicles on rent.</p>
           </div>
         </div>
 
@@ -222,7 +227,7 @@
       </div>
     </section><!-- End Subscrbe Section -->
 
-    <section>
+    <!--section>
       <div class="container wow fadeInUp">
         <div class="row mt-4 mb-4">
           <div class="col-12 text-center mt-3">
@@ -238,9 +243,29 @@
           <div class="col-12 col-md-4">
             <img src="./assets/img/clients/c3.jpeg" alt="c3" class='img-responsive img-fluid' />
           </div>
+
+          <div class="col-12 col-md-4">
+            <img src="./assets/img/WhatsApp Image 2022-02-13 at 11.51.13 PM.jpeg" alt="c3" class='img-responsive img-fluid' />
+          </div>
         </div>
       </div>
-    </section>
+    </section-->
+
+    
+    <div class="cont">
+      <h2 class="text-center font-weight-bold">Our Partners</h2>
+      <section class="customer-logos slider">
+          <div class="slide"><img src="assets/img/clients/c-1.jpeg" alt="logo" width="100px"></div>
+          <div class="slide"><img src="assets/img/clients/c2.jpeg" alt="logo" width="100px"></div>
+          <div class="slide"><img src="assets/img/clients/c3.jpeg" alt="logo" width="100px"></div>
+          <div class="slide"><img src="assets/img/clients/cropped-PicsArt_07-28-06.32.16.png" alt="logo" width="100px"></div>
+          <div class="slide"><img src="assets/img/clients/LOGO13-1.png" alt="logo" width="100px"></div>
+          <div class="slide"><img src="assets/img/clients/logo.png" alt="logo" width="100px"></div>
+          <div class="slide"><img src="assets/img/clients/YATRA-HOLIC.png" alt="logo" width="100px"></div>
+          <div class="slide"><img src="assets/img/clients/torque motor.jpeg" alt="logo" width="100px"></div>
+          <div class="slide"><img src="assets/img/clients/media_file_2a3b22ecd72d4f4be70ca3ad1030193d.png" alt="logo" width="100px"></div>
+      </section>
+  </div>
     
     <!-- ======= Contact Section ======= -->
     <section id="contact">
@@ -258,17 +283,17 @@
             <div class="info">
               <div>
                 <i class="bi bi-geo-alt"></i>
-                <p>32 ahata Sikandar kuli, <br>Bhopal, 462008</p>
+                <a href="https://goo.gl/maps/mkX2s8Fc3HuJ8dVc7" target="_blank"><p>B-nest Govindpura, <br>Bhopal, 462008</p></a>
               </div>
 
               <div>
                 <i class="bi bi-envelope"></i>
-                <p>spotmobility@gmail.com</p>
+                <a href="mailto:info@spotrental.in " target="_blank"><p>info@spotrental.in</p></a>
               </div>
 
               <div>
                 <i class="bi bi-phone"></i>
-                <p>+91 - 8519082411</p>
+                <a href="tel:+918519082411" target="_blank"><p>+91 - 8519082411</p></a>
               </div>
 
             </div>
@@ -308,6 +333,11 @@
     <div class="container">
       <div class="row">
         <section class="col-12 col-md-6">
+          <div class="box">
+            <a href="assets/privacy.html"> <i class="fas fa-read"></i>Privacy Policy</a>
+            <a href="assets/term_conditions.html"> <i class="fas fa-read"></i>Terms & Conditions</a>
+            <a href="assets/refund.html"> <i class="fas fa-read"></i>Refund Policy</a>
+          </div>
           <div class="copyright">
             &copy; Copyright 2021<strong>  S19 Mobility Pvt Ltd.</strong>. All Rights Reserved
           </div>
@@ -351,6 +381,33 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+    
+      $(document).ready(function(){
+          $('.customer-logos').slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 1500,
+              arrows: false,
+              dots: false,
+              pauseOnHover:false,
+              responsive: [{
+                  breakpoint: 768,
+                  setting: {
+                      slidesToShow:4
+                  }
+              }, {
+                  breakpoint: 520,
+                  setting: {
+                      slidesToShow: 3
+                  }
+              }]
+          });
+      });
+  
+      </script>
   
 </body>
 </html>
